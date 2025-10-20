@@ -1,0 +1,16 @@
+# Use lightweight JRE base image
+FROM eclipse-temurin:17-jre
+
+# Copy built jar into image
+ARG JAR_FILE=target/kaiburr-task1-restapi-0.0.1-SNAPSHOT.jar
+COPY ${JAR_FILE} /app/app.jar
+
+# Set working directory
+WORKDIR /app
+
+# Expose the port your Spring Boot app listens on
+EXPOSE 8080
+
+# Run the app
+ENTRYPOINT ["java","-jar","/app/app.jar"]
+
