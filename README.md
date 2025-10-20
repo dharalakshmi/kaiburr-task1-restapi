@@ -30,7 +30,7 @@ mvn clean package -DskipTests
 ------------------------------------------------------------
 ▶️ STEP 3 — RUN THE APPLICATION
 ------------------------------------------------------------
-cd C:\Users\<youruser>\projects\kaiburr-task1-restapi
+cd C:\Users\<dharalakshmi>\projects\kaiburr-task1-restapi
 java -jar .\target\kaiburr-task1-restapi-0.0.1-SNAPSHOT.jar --server.port=8081
 
 ------------------------------------------------------------
